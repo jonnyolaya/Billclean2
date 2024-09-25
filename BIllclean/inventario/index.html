@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BILLCLEAN_1</title>
+    <link rel="stylesheet" href="estiloinventario.css" />
+  </head>
+  <body>
+    <center>
+      <h1>Billclean</h1>
+      <br />
+      <h3>REGISTRO DE INVENTARIO</h3>
+    </center>
+    <br />
+    <form action="conexion2.php" method="post">
+      <ul>
+        <li>
+          <label for="name">Nombre del Empleado</label>
+          <input type="text" id="name" name="name" />
+          <br />
+          <label for="name">Identificacion del Empleado</label>
+          <input type="number" id="name" name="idempleado" />
+          <br />
+          <label for="name">Descripcion del producto</label>
+          <input type="text" id="name" name="descripcionproducto" />
+          <br />
+          <label for="name">Identificacion del producto</label>
+          <input type="number" id="name" name="idproducto" />
+          <br />
+          <label for="name">Fecha de ingreso del producto</label>
+          <input type="datetime" id="name" name="fecha" />
+          <br />
+          <label for="name">Cantidad de producto</label>
+          <input type="number" id="name" name="Cantidadproducto" />
+          <br />
+          <label for="name">valor unitario</label>
+          <input type="number" id="name" name="valorunitario" />
+          <br />
+        </li>
+      </ul>
+      <center>
+        <input type="submit" value="Enviar" />
+        <br />
+        <br />
+        <input type="reset" value="LImpiar datos" />
+      </center>
+      <br />
+      <br />
+      <label for="name"
+        >Ingrese el id del Producto que desea eliminar de la base de datos
+      </label>
+      <br />
+      <br />
+      <input type="hidden" name="id" value="id" />
+      <input
+        type="text"
+        name="nuevo_valor"
+        placeholder="Nuevo Valor"
+        required
+      />
+      <center>
+        <button type="submit" name="delete">Eliminar</button>
+      </center>
+      <br />
+      <br />
+      <button onclick="mostrarDatos()">Mostrar Datos</button>
+
+      <div id="datos"></div>
+
+      <script>
+        function mostrarDatos() {
+          fetch("mostrar.php")
+            .then((response) => response.text())
+            .then((data) => {
+              document.getElementById("datos").innerHTML = data;
+            });
+        }
+      </script>
+    </form>
+  </body>
+</html>

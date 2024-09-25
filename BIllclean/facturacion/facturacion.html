@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Facturación_Billclean</title>
+    <link rel="stylesheet" href="facturacion.css" />
+  </head>
+  <body>
+    <h1>Crear Factura</h1>
+    <form action="facturacion.php" method="post">
+      <label for="fecha">Fecha:</label>
+      <input
+        type="datetime-local"
+        id="fecha"
+        name="fecha"
+        required
+      /><br /><br />
+
+      <label for="cliente">Cliente:</label>
+      <input type="text" id="cliente" name="cliente" required /><br /><br />
+
+      <label for="direccion">Dirección:</label>
+      <input type="text" id="direccion" name="direccion" required /><br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" required /><br /><br />
+
+      <label for="idcliente">Identificación del cliente:</label>
+      <input
+        type="number"
+        id="idcliente"
+        name="idcliente"
+        required
+      /><br /><br />
+
+      <label for="producto1">Producto 1:</label>
+      <input type="text" id="producto1" name="producto1" required /><br /><br />
+
+      <label for="cantidad1">Cantidad 1:</label>
+      <input
+        type="number"
+        id="cantidad1"
+        name="cantidad1"
+        required
+      /><br /><br />
+
+      <label for="precio1">Precio 1:</label>
+      <input type="number" id="precio1" name="precio1" required /><br /><br />
+      <output name="resultado1" for="cantidad1*precio1"></output><br /><br />
+
+      <label for="producto2">Producto 2:</label>
+      <input type="text" id="producto2" name="producto2" /><br /><br />
+
+      <label for="cantidad2">Cantidad 2:</label>
+      <input type="number" id="cantidad2" name="cantidad2" /><br /><br />
+
+      <label for="precio2">Precio 2:</label>
+      <input type="number" id="precio2" name="precio2" /><br /><br />
+      <output name="resultado2" for="cantidad2*precio2"></output><br /><br />
+
+      <label for="producto3">Producto 3:</label>
+      <input type="text" id="producto3" name="producto3" /><br /><br />
+
+      <label for="cantidad3">Cantidad 3:</label>
+      <input type="number" id="cantidad3" name="cantidad3" /><br /><br />
+
+      <label for="precio3">Precio 3:</label>
+      <input type="number" id="precio3" name="precio3" /><br /><br />
+      <output name="resultado3" for="cantidad3*precio3"></output><br /><br />
+
+      <label for="producto4">Producto 4:</label>
+      <input type="text" id="producto4" name="producto4" /><br /><br />
+
+      <label for="cantidad4">Cantidad 4:</label>
+      <input type="number" id="cantidad4" name="cantidad4" /><br /><br />
+
+      <label for="precio4">Precio 4:</label>
+      <input type="number" id="precio4" name="precio4" /><br /><br />
+      <output name="resultado4" for="cantidad4*precio4"></output><br /><br />
+
+      <output
+        name="resultado5"
+        for="resultado1 + resultado2 + resultado3 + resultado4"
+      ></output
+      ><br /><br />
+
+      <input type="submit" value="Crear Factura" />
+    </form>
+
+    <form method="POST" action="mostrar_dato.php">
+      <input type="submit" name="mostrar" value="Mostrar Dato" />
+    </form>
+  </body>
+</html>

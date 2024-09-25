@@ -1,0 +1,81 @@
+  body {
+                font-family: Arial, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color:#e8f5e9;
+                text-align: center;
+                    margin: 0;
+                    padding: 0;
+  }
+
+  .login-container {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .login-container input {
+                display: block;
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+  }
+
+  .login-container button {
+                width: 100%;
+                padding: 10px;
+                background-color: #007BFF;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+  }
+    form {
+      background-color: #a5d6a7;
+      /* Fondo del formulario verde */
+      padding: 20px;
+      border-radius: 20px;
+      width: 400px;
+      margin: 0 auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border: 1px solid #ccc;
+    }
+            .titulo {
+              font-family: 'Georgia', serif;
+              font-size: 2.5em;
+              color: #333;
+              text-align: center;
+              margin-top: 20px;
+            }
+                        input[type="submit"]:hover {
+                          background-color: #2e7d32;
+                        }
+                                                input[type="submit"] {
+                                                  background-color: #388e3c;
+                                                  color: white;
+                                                  padding: 10px;
+                                                  border: none;
+                                                  border-radius: 5px;
+                                                  cursor: pointer;
+                                                }
+                                                input[type="number"] {
+                  width: 100%;
+                  padding: 8px;
+                  margin-bottom: 10px;
+                  border: 1px solid #81c784;
+                   /* Borde verde */
+                  border-radius: 5px;
+    }
+  input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #81c784;
+   /* Borde verde */
+    border-radius: 5px;
+  }
